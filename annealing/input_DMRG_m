@@ -1,0 +1,13 @@
+input{
+cutoff = 1E-12
+Maxm = 200
+
+N = 7
+nfock = 6
+filling = 1
+
+Jmax = 0.16
+
+output_folder = store/run_t30
+
+}

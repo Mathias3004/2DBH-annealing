@@ -1,0 +1,19 @@
+input{
+cutoff = 1E-6
+Maxm = 200
+
+N = 7
+nfock = 6
+filling = 1
+
+Jmax = 0.16
+//NJ = 20
+
+tmin = 1
+tmax = 15
+
+dt = 0.05
+
+output_folder = store/test_DMRG
+
+}

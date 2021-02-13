@@ -1,0 +1,13 @@
+run annealing with 28 cores
+mpirun -np 28 ./main_annealing input_annealing_m
+
+run DMRG with 29 cores
+mpirun -np 29 ./main_DMRG input_DMRG_m
+
+run expectation values for middle site and save (all MPS from above were saved and are now loaded)
+mpirun -np 29 ./main_expect_single_site *link_to_folder*
+
+open jupyter for data analysis.ipynb
+
+Make sure that DMRG and annealing MPS have same Fock space (bond dimension doesn't matter)
+and that all time and J arrays are the same (which should be good if np is chosen well)

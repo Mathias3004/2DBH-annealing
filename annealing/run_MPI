@@ -1,0 +1,16 @@
+#!/bin/bash
+
+# walltime requested
+#SBATCH -t 10:00:00
+
+# number of nodes
+#SBATCH -N 1
+
+# cores per node
+# --ntasks-per-node=28
+
+# load OpenMPI
+module load mpi/intel_openmpi
+
+# mpirun
+mpirun -np 28 ./main_annealing input_annealing_m
